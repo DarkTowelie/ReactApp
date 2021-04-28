@@ -7,7 +7,7 @@ const styles = {
     }
 }
 
-export default function Content(){
+export default function Footer(){
     return(
       <footer style={styles.footer}>
           

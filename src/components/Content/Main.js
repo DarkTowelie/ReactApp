@@ -11,7 +11,7 @@ const styles = {
     }
 }
 
-export default function Main(elements){
+export default function Main(){
     return(
       <main style={styles.main}>
           <Sidebar />

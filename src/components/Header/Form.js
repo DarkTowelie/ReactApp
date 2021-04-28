@@ -25,7 +25,7 @@ const styles = {
     }
 }
 
-export default function Header() {
+export default function Form() {
     return(
         <form style={styles.form}>
             <input style={styles.input} type='text'></input>

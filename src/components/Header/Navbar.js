@@ -10,12 +10,17 @@ const styles = {
     }
 }
 
-let textList = ['HOME', 'AUTHOR', 'WORK', 'ABOUT US'];
+let textList = [
+    {id: 1, name: 'HOME'},
+    {id: 2, name: 'AUTHOR'},
+    {id: 3, name: 'WORK'},
+    {id: 4, name: 'ABOUT US'}
+];
 export default function Navbar() {
     return(
         <ul style={styles.ul}>
             {
-                textList.map(element => {return <NavbarElement text = {element}/>})
+                textList.map(element => {return <NavbarElement text = {element.name} key = {element.id}/>})
             }
         </ul>
     );
