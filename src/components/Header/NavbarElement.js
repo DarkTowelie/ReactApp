@@ -9,8 +9,8 @@ const styles = {
     }
 }
 
-export default function NavbarElement(text) {
+export default function NavbarElement(props) {
     return(
-        <li style={styles.li}>{text.text}</li>
+        <li style={styles.li}>{props.text}</li>
     );
 }

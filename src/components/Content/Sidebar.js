@@ -19,13 +19,19 @@ const styles = {
 
 
 }
-
+let cards = [
+    {id: 1, text: "Save nature", img: require("../../images/cards/Nature1.jpg").default},
+    {id: 2, text: "Hiking trips", img: require("../../images/cards/Nature2.jpg").default},
+    {id: 3, text: "Professional photos", img: require("../../images/cards/Nature3.jpg").default}
+];
 export default function Sidebar(){
     return(
       <div style={styles.sidebar}>
           <div style={styles.news}>
-            <Card />
-            <Card />
+            {
+               cards.map(element => {return <Card text = {element.text} img = {element.img} key = {element.id}/>})
+            }
+            
           </div>
       </div>
     );
