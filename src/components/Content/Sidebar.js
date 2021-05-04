@@ -16,8 +16,6 @@ const styles = {
         justifyContent: 'center',
         flexWrap: 'wrap'
     }
-
-
 }
 let cards = [
     {id: 1, text: "Save nature", img: require("../../images/cards/Nature1.jpg").default},

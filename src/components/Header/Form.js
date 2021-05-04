@@ -13,16 +13,6 @@ const styles = {
         borderRadius: "5px",
         fontSize: "25px",
         color: '#1A153F	'
-    },
-
-    button:{
-        width:"100px",
-        height: "30px",
-        borderRadius: "5px",
-        fontSize: "15px",
-        marginLeft: "20px",
-        backgroundColor: '#80DAEB',
-        cursor: 'pointer'
     }
 }
 
