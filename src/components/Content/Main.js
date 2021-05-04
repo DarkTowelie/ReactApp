@@ -14,8 +14,8 @@ const styles = {
 export default function Main(){
     return(
       <main style={styles.main}>
-          <Sidebar />
           <Content />
+          <Sidebar />
       </main>
     );
 }

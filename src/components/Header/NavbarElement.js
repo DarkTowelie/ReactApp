@@ -1,16 +1,25 @@
 import React from 'react'
 
-const styles = {
-    li:{
+export default function NavbarElement(props) {
+    const [Color, setColor] = React.useState('#80DAEB');
+
+    const buttonStyles = 
+    {
         display: 'inline',
         padding: '10px',
-        color: '#80DAEB',
         cursor: 'pointer'
     }
-}
 
-export default function NavbarElement(props) {
+    const linkStyles = 
+    {
+        color: `${Color}`,
+        textDecoration: 'none'
+    }
+
     return(
-        <li style={styles.li}>{props.text}</li>
+        <li style={buttonStyles}
+            onMouseEnter = {() => setColor("#a1e7ff")}
+            onMouseLeave = {() => setColor("#80DAEB")}
+        ><a href="#" style={linkStyles}>{props.text}</a></li>
     );
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import BlueButton from '../Buttons/BlueButton.js'
 
 const styles = {
     card: {
@@ -18,21 +19,15 @@ const styles = {
     {
         width: '180px'
     },
-
-    button:
-    {
-        width: '110px',
-        height: '25px',
-        cursor: 'pointer'
-    }
 }
+
 
 export default function Card(props){
     return(
-      <div style={styles.card}>
+      <div style={styles.card}>  
           {props.text}
           <img style={styles.img} src= {props.img} ></img>
-          <button style={styles.button}>CONTACT US</button>
+          <BlueButton/>
       </div>
     );
 }

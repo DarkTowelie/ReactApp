@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar.js'
+import BigBlueSubmit from '../Buttons/BigBlueSubmit.js'
 
 const styles = {
     form:{
@@ -21,7 +21,8 @@ const styles = {
         borderRadius: "5px",
         fontSize: "15px",
         marginLeft: "20px",
-        backgroundColor: '#80DAEB'
+        backgroundColor: '#80DAEB',
+        cursor: 'pointer'
     }
 }
 
@@ -29,7 +30,7 @@ export default function Form() {
     return(
         <form style={styles.form}>
             <input style={styles.input} type='text'></input>
-            <input style={styles.button} value='SUBMIT' type='submit'></input>
+            <BigBlueSubmit/>
         </form>
     );
 }
